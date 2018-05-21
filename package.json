@@ -1,0 +1,28 @@
+{
+  "name": "starname",
+  "version": "1.0.3",
+  "keywords": [
+    "star names",
+    "stars",
+    "star",
+    "constellation",
+    "space",
+    "random name"
+  ],
+  "description":
+    "star names taken from https://en.wikipedia.org/wiki/List_of_proper_names_of_stars",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src/index.js --out-file index.js --presets=es2015",
+    "prepublish": "npm run build"
+  },
+  "license": "MIT",
+  "author": "Sinan Yasar <sinan@koding.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sinan/starname"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
+}
