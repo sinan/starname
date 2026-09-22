@@ -657,6 +657,80 @@ var names = [
   "Zuoqi",
 ]
 
+var constellations = [
+  "Andromeda",
+  "Aquarius",
+  "Aquila",
+  "Ara",
+  "Aries",
+  "Auriga",
+  "Boötes",
+  "Camelopardalis",
+  "Cancer",
+  "Canes Venatici",
+  "Canis Major",
+  "Canis Minor",
+  "Capricornus",
+  "Carina",
+  "Cassiopeia",
+  "Centaurus",
+  "Cepheus",
+  "Cetus",
+  "Columba",
+  "Coma Berenices",
+  "Corona Australis",
+  "Corona Borealis",
+  "Corvus",
+  "Crater",
+  "Crux",
+  "Cygnus",
+  "Delphinus",
+  "Draco",
+  "Equuleus",
+  "Eridanus",
+  "Fornax",
+  "Gemini",
+  "Grus",
+  "Hercules",
+  "Hydra",
+  "Leo",
+  "Leo Minor",
+  "Lepus",
+  "Libra",
+  "Lynx",
+  "Lyra",
+  "Octans",
+  "Ophiuchus",
+  "Orion",
+  "Pavo",
+  "Pegasus",
+  "Perseus",
+  "Phoenix",
+  "Pisces",
+  "Piscis Austrinus",
+  "Puppis",
+  "Sagitta",
+  "Sagittarius",
+  "Scorpius",
+  "Serpens",
+  "Taurus",
+  "Triangulum",
+  "Triangulum Australe",
+  "Ursa Major",
+  "Ursa Minor",
+  "Vela",
+  "Virgo",
+  "Vulpecula",
+]
+
+function pick(list) {
+  return list[Math.floor(Math.random() * list.length)]
+}
+
 module.exports = function () {
-  return names[Math.floor(Math.random() * names.length)]
+  return pick(names)
+}
+
+module.exports.constellation = function () {
+  return pick(constellations)
 }
