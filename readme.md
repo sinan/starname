@@ -11,10 +11,15 @@ yarn add starname
 ### Usage
 
 ```javascript
-import starname from 'starname'
+import starname, { constellation } from 'starname'
 
-const star = starname()
-console.log(star)
+starname()
+// Albireo
+
+constellation()
 // Corona Borealis
 ```
 
+### Upgrading from 1.x
+
+1.x returned constellation names, not star names. The default export now returns real star names. Use `constellation()` if you relied on the old names.
